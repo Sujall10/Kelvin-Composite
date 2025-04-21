@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Kelvin Composites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +1 (123) 456-7890</span>
+                <span><i class="fas fa-envelope"></i> info@kelvincomposites.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/kelvin-logo.png" alt="Kelvin Composites">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="active">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Marine Composites</a>
+                            <a href="#">Industrial Composites</a>
+                            <a href="#">Aerospace Composites</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Products Overview Section -->
+    <section class="products-overview-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>High-Performance Composite Materials</h2>
+                <p>Engineered for strength, durability, and lightweight performance</p>
+            </div>
+            <div class="products-tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="marine">Marine Composites</div>
+                    <div class="tab-btn" data-tab="industrial">Industrial Composites</div>
+                    <div class="tab-btn" data-tab="aerospace">Aerospace Composites</div>
+                </div>
+                <div class="tab-content active" id="marine">
+                    <div class="tab-text">
+                        <h3>Marine Composite Solutions</h3>
+                        <p>Our marine composites are designed to withstand the harshest ocean environments while providing exceptional strength-to-weight ratios. These materials are corrosion-resistant, durable, and perfect for a wide range of marine applications.</p>
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Superior corrosion resistance</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Excellent strength-to-weight ratio</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>UV and water absorption resistant</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom formulations available</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Marine Products</a>
+                    </div>
+                    <div class="tab-image">
+                        <img src="images/marine-product.jpg" alt="Marine Composites">
+                    </div>
+                </div>
+                <div class="tab-content" id="industrial">
+                    <div class="tab-text">
+                        <h3>Industrial Composite Solutions</h3>
+                        <p>Our industrial composites are engineered for demanding applications where traditional materials fall short. These materials offer exceptional durability, chemical resistance, and long-term performance in harsh environments.</p>
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>High chemical resistance</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Exceptional durability</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fire-retardant options</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom formulations available</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Industrial Products</a>
+                    </div>
+                    <div class="tab-image">
+                        <img src="images/industrial-product.jpg" alt="Industrial Composites">
+                    </div>
+                </div>
+                <div class="tab-content" id="aerospace">
+                    <div class="tab-text">
+                        <h3>Aerospace Composite Solutions</h3>
+                        <p>Our aerospace composites meet the most stringent requirements for weight reduction, strength, and performance. These materials are used in aircraft structures, interiors, and components where every gram counts.</p>
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ultra-lightweight</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>High strength-to-weight ratio</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>FAA and EASA certified</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom formulations available</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Aerospace Products</a>
+                    </div>
+                    <div class="tab-image">
+                        <img src="images/aerospace-product.jpg" alt="Aerospace Composites">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Product Categories</h2>
+                <p>Explore our range of composite materials</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Marine Composites</h3>
+                    <p>High-performance materials for boat building and marine applications.</p>
+                    <a href="#" class="btn btn-outline">View Products</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industrial Composites</h3>
+                    <p>Durable solutions for industrial applications and infrastructure.</p>
+                    <a href="#" class="btn btn-outline">View Products</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Aerospace Composites</h3>
+                    <p>Lightweight, high-strength materials for aerospace applications.</p>
+                    <a href="#" class="btn btn-outline">View Products</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored composite materials for specialized applications.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section class="product-features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Composites?</h2>
+                <p>Superior performance and technical advantages</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                    </div>
+                    <h4>Lightweight</h4>
+                    <p>Our composites offer significant weight reduction compared to traditional materials.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Durable</h4>
+                    <p>Exceptional resistance to corrosion, fatigue, and environmental factors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>High Strength</h4>
+                    <p>Superior strength-to-weight ratios for demanding applications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h4>Customizable</h4>
+                    <p>Tailored formulations to meet specific performance requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Sustainable</h4>
+                    <p>Eco-friendly options with recycled content and reduced environmental impact.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Certified</h4>
+                    <p>Compliant with industry standards and certifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="tech-specs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Specifications</h2>
+                <p>Performance data for our standard product lines</p>
+            </div>
+            <div class="specs-tabs">
+                <div class="specs-tab-header">
+                    <div class="specs-tab-btn active" data-tab="marine-specs">Marine</div>
+                    <div class="specs-tab-btn" data-tab="industrial-specs">Industrial</div>
+                    <div class="specs-tab-btn" data-tab="aerospace-specs">Aerospace</div>
+                </div>
+                <div class="specs-tab-content active" id="marine-specs">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>KM-100 Series</th>
+                                <th>KM-200 Series</th>
+                                <th>KM-300 Series</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tensile Strength (MPa)</td>
+                                <td>350</td>
+                                <td>480</td>
+                                <td>620</td>
+                            </tr>
+                            <tr>
+                                <td>Flexural Strength (MPa)</td>
+                                <td>420</td>
+                                <td>550</td>
+                                <td>700</td>
+                            </tr>
+                            <tr>
+                                <td>Density (g/cm³)</td>
+                                <td>1.45</td>
+                                <td>1.55</td>
+                                <td>1.65</td>
+                            </tr>
+                            <tr>
+                                <td>Water Absorption (%)</td>
+                                <td>0.8</td>
+                                <td>0.5</td>
+                                <td>0.3</td>
+                            </tr>
+                            <tr>
+                                <td>UV Resistance</td>
+                                <td>Excellent</td>
+                                <td>Excellent</td>
+                                <td>Excellent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="specs-tab-content" id="industrial-specs">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>KI-100 Series</th>
+                                <th>KI-200 Series</th>
+                                <th>KI-300 Series</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tensile Strength (MPa)</td>
+                                <td>400</td>
+                                <td>520</td>
+                                <td>650</td>
+                            </tr>
+                            <tr>
+                                <td>Flexural Strength (MPa)</td>
+                                <td>450</td>
+                                <td>580</td>
+                                <td>720</td>
+                            </tr>
+                            <tr>
+                                <td>Density (g/cm³)</td>
+                                <td>1.55</td>
+                                <td>1.65</td>
+                                <td>1.75</td>
+                            </tr>
+                            <tr>
+                                <td>Chemical Resistance</td>
+                                <td>Good</td>
+                                <td>Excellent</td>
+                                <td>Exceptional</td>
+                            </tr>
+                            <tr>
+                                <td>Temperature Range (°C)</td>
+                                <td>-40 to +120</td>
+                                <td>-50 to +150</td>
+                                <td>-60 to +180</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="specs-tab-content" id="aerospace-specs">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>KA-100 Series</th>
+                                <th>KA-200 Series</th>
+                                <th>KA-300 Series</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tensile Strength (MPa)</td>
+                                <td>500</td>
+                                <td>650</td>
+                                <td>800</td>
+                            </tr>
+                            <tr>
+                                <td>Flexural Strength (MPa)</td>
+                                <td>550</td>
+                                <td>700</td>
+                                <td>850</td>
+                            </tr>
+                            <tr>
+                                <td>Density (g/cm³)</td>
+                                <td>1.35</td>
+                                <td>1.45</td>
+                                <td>1.55</td>
+                            </tr>
+                            <tr>
+                                <td>Flammability</td>
+                                <td>FAR 25.853</td>
+                                <td>FAR 25.853</td>
+                                <td>FAR 25.853</td>
+                            </tr>
+                            <tr>
+                                <td>Temperature Range (°C)</td>
+                                <td>-60 to +150</td>
+                                <td>-70 to +180</td>
+                                <td>-80 to +200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="specs-note">
+                <p><strong>Note:</strong> All specifications are for standard formulations. Custom formulations may have different properties. Contact our technical team for detailed specifications and test data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need a Custom Composite Solution?</h2>
+            <p>Our engineering team can develop materials tailored to your specific requirements.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Our Experts</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/kelvin-logo-white.png" alt="Kelvin Composites" class="footer-logo">
+                    <p>Innovative composite solutions for marine, industrial, and aerospace applications.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Marine Composites</a></li>
+                        <li><a href="#">Industrial Composites</a></li>
+                        <li><a href="#">Aerospace Composites</a></li>
+                        <li><a href="#">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Industrial Park, Boston, MA 02134, USA</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@kelvincomposites.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kelvin Composites. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
