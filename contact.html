@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kelvin Composites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +1 (123) 456-7890</span>
+                <span><i class="fas fa-envelope"></i> info@kelvincomposites.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/kelvin-logo.png" alt="Kelvin Composites">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="products.html">Marine Composites</a>
+                            <a href="products.html">Industrial Composites</a>
+                            <a href="products.html">Aerospace Composites</a>
+                        </div>
+                    </li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about our products or services? Our team is ready to help you find the right composite solution for your needs.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Headquarters</h4>
+                            <p>123 Industrial Park<br>Boston, MA 02134<br>United States</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@kelvincomposites.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM EST<br>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="product-info">Product Information</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="custom-solution">Custom Solution</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Locations</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.665877980534!2d-71.092302684544!3d42.34997997918791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7dc2b67e7b%3A0x36ec93427cd9c5f1!2sBoston%2C%20MA%2002134%2C%20USA!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offices Section -->
+    <section class="offices-section">
+        <div class="container">
+            <h2 class="section-title">Our Global Offices</h2>
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3>United States</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Industrial Park<br>Boston, MA 02134</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> us@kelvincomposites.com</p>
+                </div>
+                <div class="office-card">
+                    <h3>Germany</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Industriestraße 45<br>28195 Bremen</p>
+                    <p><i class="fas fa-phone"></i> +49 421 1234567</p>
+                    <p><i class="fas fa-envelope"></i> europe@kelvincomposites.com</p>
+                </div>
+                <div class="office-card">
+                    <h3>Singapore</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 10 Tuas South Street<br>Singapore 637015</p>
+                    <p><i class="fas fa-phone"></i> +65 6123 4567</p>
+                    <p><i class="fas fa-envelope"></i> asia@kelvincomposites.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Discuss Your Project?</h2>
+            <p>Contact our team of experts to find the perfect composite solution for your needs.</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/kelvin-logo-white.png" alt="Kelvin Composites" class="footer-logo">
+                    <p>Innovative composite solutions for marine, industrial, and aerospace applications.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Marine Composites</a></li>
+                        <li><a href="#">Industrial Composites</a></li>
+                        <li><a href="#">Aerospace Composites</a></li>
+                        <li><a href="#">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Industrial Park, Boston, MA 02134, USA</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@kelvincomposites.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kelvin Composites. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // Here you would typically send the data to a server
+            // For this static example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you at ${email} shortly.`);
+            
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

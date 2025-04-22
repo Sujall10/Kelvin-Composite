@@ -36,12 +36,12 @@
                     <li class="dropdown">
                         <a href="products.html" class="active">Products <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Marine Composites</a>
-                            <a href="#">Industrial Composites</a>
-                            <a href="#">Aerospace Composites</a>
+                            <a href="products.html">Marine Composites</a>
+                            <a href="products.html">Industrial Composites</a>
+                            <a href="products.html">Aerospace Composites</a>
                         </div>
                     </li>
-                    <li><a href="#">Applications</a></li>
+                    <li><a href="applications.html">Applications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -477,5 +477,50 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabContainer = document.querySelector('.products-tabs');
+            const tabButtons = tabContainer.querySelectorAll('.tab-btn');
+            const tabContents = tabContainer.querySelectorAll('.tab-content');
+        
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-tab');
+        
+                    // Remove active classes from all
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+        
+                    // Add active to the clicked tab and its content
+                    button.classList.add('active');
+                    tabContainer.querySelector(`#${targetId}`).classList.add('active');
+                });
+            });
+        });
+        </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const specsTabContainer = document.querySelector('.specs-tabs');
+        const specsTabButtons = specsTabContainer.querySelectorAll('.specs-tab-btn');
+        const specsTabContents = specsTabContainer.querySelectorAll('.specs-tab-content');
+    
+        specsTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-tab');
+    
+                // Remove active classes from all
+                specsTabButtons.forEach(btn => btn.classList.remove('active'));
+                specsTabContents.forEach(content => content.classList.remove('active'));
+    
+                // Activate selected
+                button.classList.add('active');
+                specsTabContainer.querySelector(`#${targetId}`).classList.add('active');
+            });
+        });
+    });
+    </script>
+    
+        
 </body>
 </html>
