@@ -1169,6 +1169,15 @@ textarea {
     min-height: 120px;
 }
 
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+
 button[type="submit"] {
     padding: 12px 25px;
     background-color: var(--primary-color);
