@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-    --primary-color: #0056b3;
-    --secondary-color: #003366;
+    --primary-color: #55565B;
+    --secondary-color: #393A3F;
     --accent-color: #ff6600;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
@@ -1386,6 +1386,9 @@ button[type="submit"]:hover {
 }
 
 .application-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: var(--white);
     padding: 30px 20px;
     margin: 10px;
@@ -1399,6 +1402,10 @@ button[type="submit"]:hover {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+.application-card img{
+    width: 50%;
+    height: auto;
+}
 .application-card i {
     font-size: 40px;
     color: var(--primary-color);
@@ -1577,6 +1584,7 @@ button[type="submit"]:hover {
         overflow-x: auto;
     }
 
+    
     .contact-details {
         flex-direction: column;
         align-items: center;
@@ -1680,4 +1688,17 @@ button[type="submit"]:hover {
     .application-card p {
         font-size: 13px;
     }
+    .tab-header{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tab-btn.active {
+        border-bottom: none;
+        border-left: 3px solid var(--accent-color);
+    }
+
+    /* .specs-tab-header {
+        
+    } */
 }
