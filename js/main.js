@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true      // whether animation should happen only once - while scrolling down
+    });
+
+    
     // Hero Slider
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');

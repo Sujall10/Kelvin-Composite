@@ -34,11 +34,12 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
-                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <a href="products.html" >Products <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="products.html">Plastic products</a>
-                            <a href="products.html">Mould Design</a>
-                            <a href="products.html">Project Management</a>
+                            <a href="products.html#product-categories-section">Healthcare</a>
+                            <a href="products.html#product-categories-section">Electrical</a>
+                            <a href="products.html#product-categories-section">Household</a>
+                            <a href="products.html#product-categories-section">Custom Solutions</a>
                         </div>
                     </li>
                     <li><a href="applications.html" class="active">Applications</a></li>
@@ -69,10 +70,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>Industry Applications</h2>
-                <p>Kelvin Composites materials are designed for performance across a wide range of sectors.</p>
+                <p>Swasttik Plastic materials are designed for performance across a wide range of sectors.</p>
             </div>
             <div class="applications-grid">
-                <div class="application-card">
+                <div class="application-card fade-in">
                     <!-- <img src="Electric.jpg" alt="Electric Applications "> -->
                     <div>
                         <h3>Electric Applications </h3>
@@ -84,7 +85,7 @@
                     </div>
                     <!-- <p>Our composites are used in hulls, decks, and components for superior corrosion resistance and lightweight durability.</p> -->
                 </div>
-                <div class="application-card">
+                <div class="application-card fade-in">
                     <!-- <img src="images/app-industrial.jpg" alt="Industrial Application"> -->
                     <div>
                         <h3>Food application</h3>
@@ -96,7 +97,7 @@
                         <!-- <p>Ideal for heavy-duty environments, our composites are used in pipelines, tanks, and structural panels.</p>                 -->
                     </div>    
                 </div>
-                <div class="application-card">
+                <div class="application-card fade-in">
                     <!-- <img src="images/app-aerospace.jpg" alt="Aerospace Application"> -->
                     <div>
                         <h3>Household applications</h3>
@@ -108,7 +109,7 @@
                         <!-- <p>Lightweight and high-strength materials for aircraft interiors, structural parts, and thermal insulation components.</p> -->
                     </div>
                 </div>
-                <div class="application-card">
+                <div class="application-card fade-in">
                     <!-- <img src="images/app-automotive.jpg" alt="Automotive Application"> -->
                     <div>
                         <h3>Healthcare application</h3>
@@ -139,7 +140,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section fade-in">
         <div class="container">
             <h2>Need a Custom Solution?</h2>
             <p>Let’s work together to find the perfect material for your application.</p>
@@ -152,14 +153,15 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="872e34ef-3af0-4bcc-a413-ad69a7ad9cef-removebg-preview.png" alt="Kelvin Composites" class="footer-logo">
+                    <img src="872e34ef-3af0-4bcc-a413-ad69a7ad9cef-removebg-preview.png" alt="NA" class="footer-logo">
                     <p>we transform your ideas into high-quality plastic components with precision, innovation, and care.</p>
-                    <div class="footer-social">
+                    <!-- <p>Innovative composite solutions for marine, industrial, and aerospace applications.</p> -->
+                    <!-- <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
@@ -174,10 +176,10 @@
                 <div class="footer-col">
                     <h3>Products</h3>
                     <ul>
-                        <li><a href="#">Marine Composites</a></li>
-                        <li><a href="#">Industrial Composites</a></li>
-                        <li><a href="#">Aerospace Composites</a></li>
-                        <li><a href="#">Custom Solutions</a></li>
+                        <li><a href="products.html#product-categories-section">Household</a></li>
+                        <li><a href="products.html#product-categories-section">Healthcare</a></li>
+                        <li><a href="products.html#product-categories-section">Electrical</a></li>
+                        <li><a href="products.html#product-categories-section">Custom Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -200,6 +202,32 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Intersection Observer to add the 'visible' class when elements are in view
+        document.addEventListener("DOMContentLoaded", function () {
+          const fadeElements = document.querySelectorAll('.fade-in'); // All elements with fade-in class
+        
+          // Options for IntersectionObserver (only trigger when the element is 50% visible)
+          const options = {
+            root: null, // Defaults to viewport
+            rootMargin: '0px',
+            threshold: 0.5
+          };
+        
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+              }
+            });
+          }, options);
+        
+          fadeElements.forEach(element => {
+            observer.observe(element); // Start observing the element
+          });
+        });
+        </script>
 
     <a href="https://wa.me/9157757979" class="whatsapp-float" target="_blank">
         <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat" />

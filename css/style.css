@@ -19,6 +19,16 @@
     box-sizing: border-box;
 }
 
+/* Initial state: element is transparent */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Transition duration */
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  
 body {
     font-family: var(--font-main);
     color: var(--text-color);
@@ -1528,9 +1538,17 @@ button[type="submit"]:hover {
     }
     
     .hero {
-        height: auto;
-        min-height: auto;
+        position: relative;
+        height: 80vh;
+        min-height: 600px;
+        overflow: hidden;
+        background-color: #343a40;
     }
+
+    /* .hero {
+        height: max-content;
+        min-height: auto;
+    } */
     
     .slide-content h1 {
         font-size: 36px;
