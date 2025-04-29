@@ -305,7 +305,7 @@
 
     <script type="text/javascript">
        (function(){
-          emailjs.init("Ppp4eb5EgXLXORKDW"); // Your EmailJS Public key
+          emailjs.init("HMu1y-kUy2u2fBps3"); // Your EmailJS Public key
        })();
     </script>
 
@@ -318,12 +318,12 @@
             const form = this;
         
             // Send to Owner
-            emailjs.sendForm('service_h8sj9v8', 'template_8ujoi0s', form)
+            emailjs.sendForm('service_f2tvfjp', 'template_l2o9xsd', form)
                 .then(function(response) {
                     console.log('Owner Email Sent!', response.status, response.text);
                 
                     // Then send confirmation to user
-                    emailjs.sendForm('service_h8sj9v8', 'template_vw5fft6', form)
+                    emailjs.sendForm('service_f2tvfjp', 'template_tauitr3', form)
                         .then(function(response) {
                             console.log('Confirmation Email Sent!', response.status, response.text);
                             alert('Thank you! Your message has been sent.');
